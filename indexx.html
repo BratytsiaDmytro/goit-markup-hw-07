@@ -5,43 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- Header -->
     <header class="page-header">
-      <div class="containet">
+      <div class="container page-header__container">
         <nav class="header-nav">
-          <a class="logo" href="/">
+          <a class="logo header-nav__logo" href="/">
             Web<span class="logo logo--dark">Studio</span>
           </a>
           <ul class="header-nav__list list">
             <li class="header-nav__item item">
-              <a href="#" class="nav__link">Студія</a>
+              <a
+                href="./indexx.html"
+                class="header-nav__link header-nav__link--current link"
+                >Студія</a
+              >
             </li>
             <li class="header-nav__item item">
-              <a href="#" class="nav__link">Портфоліо</a>
+              <a href="./portfolioo.html" class="header-nav__link link"
+                >Портфоліо</a
+              >
             </li>
             <li class="header-nav__item item">
-              <a href="#" class="nav__link">Контакти</a>
+              <a href="#" class="header-nav__link link">Контакти</a>
             </li>
           </ul>
         </nav>
-        <ul class="header-contact list">
-          <li class="header-contact__item item">
-            <a href="info@devstudio.com" class="header-contact__link"
-              ><svg class="header-contact__icon" width="16" height="12">
+        <ul class="contact page-header__contact list">
+          <li class="contact__item item">
+            <a href="info@devstudio.com" class="contact__link link"
+              ><svg class="contact__icon" width="16" height="12">
                 <use href="./images/icons/icons.svg#envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="header-contact__item item">
-            <a href="+38 096 111 11 11" class="header-contact__link"
-              ><svg class="header-contact__icon" width="10" height="16">
+          <li class="contact__item item">
+            <a href="+38 096 111 11 11" class="contact__link link"
+              ><svg class="contact__icon" width="10" height="16">
                 <use href="./images/icons/icons.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -58,35 +71,41 @@
           <h1 class="hero-section__title">
             Ефективні рішення для вашого бізнесу
           </h1>
-          <button class="button" type="button">Замовити послугу</button>
+          <button
+            class="button hero-section__button"
+            data-modal-open
+            type="button"
+          >
+            Замовити послугу
+          </button>
         </div>
       </section>
       <!-- Features section -->
-      <section class="features-section">
+      <section class="section">
         <div class="container">
-          <h2 class="features-section__title">Особливості</h2>
-          <ul class="features-list">
-            <li class="features-list__item">
+          <h2 class="title visually-hidden">Особливості</h2>
+          <ul class="features-list list">
+            <li class="features-list__item icon-antenna item">
               <h2 class="features-list__title">Увага до деталей</h2>
               <p class="features-list__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
-            <li class="features-list__item">
+            <li class="features-list__item icon-clock item">
               <h2 class="features-list__title">Пунктуальність</h2>
               <p class="features-list__text">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
-            <li class="features-list__item">
+            <li class="features-list__item icon-diagram item">
               <h2 class="features-list__title">Пунктуальність</h2>
               <p class="features-list__text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="features-list__item">
+            <li class="features-list__item icon-astronaut item">
               <h2 class="features-list__title">Сучасні технології</h2>
               <p class="features-list__text">
                 Значимість цих проблем настільки очевидна, що реалізація
@@ -97,9 +116,9 @@
         </div>
       </section>
       <!-- Examples section -->
-      <section class="examples-section">
+      <section class="section examples-section">
         <div class="container">
-          <h2 class="examples-section__title">Чим ми займаємося</h2>
+          <h2 class="title examples-section__title">Чим ми займаємося</h2>
           <ul class="list examples-list">
             <li class="examples-list__item item">
               <img
@@ -108,7 +127,7 @@
                 width="370"
                 height="294"
               />
-              <div class="examples-list__desc">
+              <div class="examples-list__overlay">
                 <p class="examples-list__text">Десктопні додатки</p>
               </div>
             </li>
@@ -119,7 +138,7 @@
                 width="370"
                 height="294"
               />
-              <div class="examples-list__desc">
+              <div class="examples-list__overlay">
                 <p class="examples-list__text">Мобільні додатки</p>
               </div>
             </li>
@@ -130,7 +149,7 @@
                 width="370"
                 height="294"
               />
-              <div class="examples-list__desc">
+              <div class="examples-list__overlay">
                 <p class="examples-list__text">Дизайнерські рішення</p>
               </div>
             </li>
@@ -138,8 +157,8 @@
         </div>
       </section>
       <!-- Team section -->
-      <section class="team-section">
-        <div class="conteiner">
+      <section class="section team-section">
+        <div class="container">
           <h2 class="team-section__title">Наша команда</h2>
           <ul class="list team-list">
             <li class="team-list__item item">
@@ -382,9 +401,9 @@
         </div>
       </section>
       <!-- Clients section -->
-      <section class="clients-section">
-        <div class="conteiner">
-          <h2 class="clients-section__title">Постійні клієнти</h2>
+      <section class="section">
+        <div class="container">
+          <h2 class="title clients-title">Постійні клієнти</h2>
           <ul class="list clients-list">
             <li class="clients-list__item">
               <a href="#" class="clients-list__link">
@@ -434,16 +453,16 @@
     </main>
     <!-- Footer -->
     <footer class="page-footer">
-      <div class="conteiner">
+      <div class="container page-footer__container">
         <div class="address">
-          <a class="logo" href="/"
+          <a class="logo address__logo" href="/"
             >Web<span class="logo logo--light">Studio</span></a
           >
           <address>
             <ul class="list address-list">
-              <li class="address-list__item">
+              <li class="address-list__item item">
                 <a
-                  class="address-list__link"
+                  class="address-list__link link"
                   href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
@@ -452,13 +471,15 @@
               </li>
               <li class="address-list__item item">
                 <a
-                  class="link address-list__link"
+                  class="link address-list__link address-list__link--translucent"
                   href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
               <li class="address-list__item item">
-                <a class="link address-link" href="tel:+380961111111"
+                <a
+                  class="link address-list__link address-list__link--translucent"
+                  href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -469,28 +490,28 @@
           <p class="social-contact__title">приєднуйтесь</p>
           <ul class="list social-list">
             <li class="social-list__item">
-              <a class="social-list__link" href="#">
+              <a class="social-list__link social-list__link--dark" href="#">
                 <svg class="social-list__icon" width="44" height="44">
                   <use href="./images/icon/icons.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social-list__item">
-              <a class="social-list__link" href="#">
+              <a class="social-list__link social-list__link--dark" href="#">
                 <svg class="social-list__icon" width="44" height="44">
                   <use href="./images/icon/icons.svg#twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social-list__item">
-              <a class="social-list__link" href="#">
+              <a class="social-list__link social-list__link--dark" href="#">
                 <svg class="social-list__icon" width="44" height="44">
                   <use href="./images/icon/icons.svg#facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social-list__item">
-              <a class="social-list__link" href="#">
+              <a class="social-list__link social-list__link--dark" href="#">
                 <svg class="social-list__icon" width="44" height="44">
                   <use href="./images/icon/icons.svg#linkedin"></use>
                 </svg>
@@ -527,7 +548,7 @@
     <!-- Modal section -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-button-close" data-modal-close type="button">
+        <button class="button-close" data-modal-close type="button">
           <svg width="18px" height="18px">
             <use href="./images/icon/icons.svg#close"></use>
           </svg>
@@ -535,60 +556,69 @@
         <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
         <form name="contact-form" autocomplete="off" novalidate>
           <label class="form-label" for="user-name">Ім'я</label>
-          <div class="contact-form-input">
-            <input class="form-input" id="user-name" type="text" name="name" />
-            <svg class="contact-form-icon" width="18" height="18">
+          <div class="input-wrap">
+            <input
+              class="form-label__input"
+              id="user-name"
+              type="text"
+              name="name"
+            />
+            <svg class="form-label__icon" width="18" height="18">
               <use href="./images/icon/icons.svg#person"></use>
             </svg>
           </div>
 
           <label class="form-label" for="user-phone">Телефон</label>
-          <div class="contact-form-input">
-            <input class="form-input" id="user-phone" type="tel" name="phone" />
-            <svg class="contact-form-icon" width="18" height="18">
+          <div class="input-wrap">
+            <input
+              class="form-label__input"
+              id="user-phone"
+              type="tel"
+              name="phone"
+            />
+            <svg class="form-label__icon" width="18" height="18">
               <use href="./images/icon/icons.svg#phone"></use>
             </svg>
           </div>
 
           <label class="form-label" for="user-email">Пошта</label>
-          <div class="contact-form-input">
+          <div class="input-wrap">
             <input
-              class="form-input"
+              class="form-label__input"
               id="user-email"
               type="email"
               name="mail"
             />
-            <svg class="contact-form-icon" width="18" height="18">
+            <svg class="form-label__icon" width="18" height="18">
               <use href="./images/icon/icons.svg#email"></use>
             </svg>
           </div>
 
-          <div class="contact-form-textarea">
-            <label class="form-label" for="user-comments">Коментар</label>
-            <textarea
-              class="form-textarea"
-              id="user-comments"
-              name="user-comments"
-              placeholder="Введіть текст"
-            ></textarea>
-          </div>
+          <label class="form-label" for="user-comments">Коментар</label>
+          <textarea
+            class="form-label__textarea"
+            id="user-comments"
+            name="user-comments"
+            placeholder="Введіть текст"
+          ></textarea>
 
-          <div class="contact-form-checkbox">
-            <label for="terms-checkbox">
+          <div class="checkbox-wrap">
+            <label class="checkbox" for="terms-checkbox">
               <input
-                class="form-checkbox"
+                class="checkbox__input"
                 id="terms-checkbox"
                 type="checkbox"
                 name="terms-checkbox"
               />
-              <svg class="checkbox-icon" width="16" height="15">
+              <svg class="checkbox__icon" width="16" height="15">
                 <use href="./images/icon/icons.svg#icon-check"></use>
               </svg>
               Погоджуюся з розсилкою та приймаю
-              <a class="terms-link" href="#">Умови договору</a>
+              <a class="checkbox__link" href="#">Умови договору</a>
             </label>
           </div>
-          <button class="form-button" type="submit">Відправити</button>
+
+          <button class="button modal-button" type="submit">Відправити</button>
         </form>
       </div>
     </div>
